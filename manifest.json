@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "TraktFox",
+  "version": "0.1",
+  "description": "Collection of enhancements and fixes for Trakt.tv on Firefox.",
+
+  "author": "alchimist",
+  "developer": {
+    "name": "alchimist",
+    "url": "https://github.com/cenci0"
+  },
+  "homepage_url": "https://github.com/cenci0/traktfox",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "incognito": "spanning",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*.trakt.tv/",
+    "https://*.trakt.tv/"
+  ],
+
+  "background": {
+    "scripts": ["traktfox.js"]
+  }
+}
